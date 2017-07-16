@@ -2,14 +2,95 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-widthuser-scalable=no">
     <title>educacion</title>
   </head>
   <body>
     <header>
+      <img src="multimedia/logo.svg" alt="logo JR" height="150" weight="150" border="3">
       <h1>Hoja de vida</h1>
-       <h2>John Edwing Ruiz Reyes</h2>
-       <h3>30/10/89 México,CDMX</h3><br>
+      <h2>John Edwing Ruiz Reyes</h2>
+      <h3>30/10/89 México,CDMX</h3><br>
     </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educacion</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+      </ul>
+    </nav>
+
+    <section>
+     <h2>Educación:</h2>
+     <table border="2">
+       <tr>
+         <th>Año</th>
+         <th>Institución</th>
+         <th>lugar</th>
+         <th>¿Culminó?</th>
+       </tr>
+       <tr>
+         <td>1996</td>
+         <td>Primaria</td>
+         <td>Mexico CDMX</td>
+         <td>si</td>
+       </tr>
+       <tr>
+         <td>2002</td>
+         <td>Secundaria</td>
+         <td>Mexico CDMX</td>
+         <td>si</td>
+       </tr>
+       <tr>
+         <td>2005</td>
+         <td>Preparatorio</td>
+         <td>Mexico CDMX</td>
+         <td>si</td>
+       </tr>
+       <tr>
+         <td>2016</td>
+         <td>Universidad</td>
+         <td>Mexico CDMX</td>
+         <td>En curso</td>
+       </tr>
+     </table><br><br><br>
+
+     <form>
+       <fieldset>
+         <legend><strong>Agregar Estudios</strong></legend>
+
+         <label for="Año">Año</label>
+         <select id="Año">
+           <option>2006</option>
+           <option>2007</option>
+           <option>2008</option>
+           <option>2009</option>
+           <option>2010</option>
+           <option>2011</option>
+           <option>2012</option>
+           <option>2013</option>
+           <option>2014</option>
+           <option>2015</option>
+           <option>2016</option>
+           <option>2017</option>
+         </select><br><br>
+
+         <label for="ins">Institución</label>
+         <input type="text" id="ins"><br><br>
+         <label for="lugar">Lugar</label>
+         <textarea id="lugar" rows="1" cols="10"></textarea><br><br>
+         <label for="culm">¿Culminó?</label>
+         <input type="radio" name="cul"  id="culm">si
+         <input type="radio" name="cul"  id="culm">no
+         <br><br>
+         <input type="submit"><br><br><br>
+       </fieldset>
+     </form>
+   </section>
+
+
+
     <footer>
      <address>
        Información de contacto:<br>
